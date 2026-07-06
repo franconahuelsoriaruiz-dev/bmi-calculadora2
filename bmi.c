@@ -12,6 +12,15 @@ int main() {
     imc = peso / (altura * altura);
     
     printf("\nSu indice de masa corporal es: %.2f\n\n", imc);
+    if (imc < 18.5) {
+    printf("Condicion: Bajo peso\n");
+} else if (imc < 25) {
+    printf("Condicion: Normal\n");
+} else if (imc < 30) {
+    printf("Condicion: Sobrepeso\n");
+} else {
+    printf("Condicion: Obesidad\n");
+}
     
     printf("    Indice    |  Condicion\n");
     printf("-----------------------------\n");
